@@ -3,34 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href="/css/styles.css" >
+    <link rel="stylesheet" href="/css/styles.css">
     <title>Formulario de contactos</title>
 </head>
 <body>
+    <header>
+        <div class="container">
+            <a href="index.html"> <img src="imagenes/Biblioteca.jpg" alt="logo de Reservorio Educativo" class="logo"></a>
+            <h1 class="title">Recursos para todos los niveles</h1>
+        </div>
+    </header>
     <aside>
-        <div class="Formulario de sugerencias"><h4>Formulario de sugerencias</h4></div>      
+        <div class="formulario de sugerencias">
+            <h4>Formulario de sugerencias</h4>
             <form action="/action_page.php" method="post">
                 <label for="fname">Nombres:</label>
                 <input type="text" id="fname" name="fname"><br><br>
                 <label for="lname">Apellido:</label>
                 <input type="text" id="lname" name="lname"><br><br>
-                <label for="BirthDate">Fecha de nacimiento:</label><br><br>
-                <input type="date" name="birthdate"></input><br><br>
-                <label for="radio">Nivel:</label>
-                <input type="radio" name="Nivel Primario" value="1">Nivel Primario
-                <input type="radio" name="Nivel Secundario" value="2">Nivel Secundario
+                <label for="birthDate">Fecha de nacimiento:</label><br><br>
+                <input type="date" name="birthdate"><br><br>
+                <label for="radio">Nivel:</label><br><br>
+                <input type="radio" name="nivel Primario" value="1">Nivel Primario
+                <input type="radio" name="nivel Secundario" value="2">Nivel Secundario
                 <br><br>
                 <label for="radio">Grado de satisfacción con los materiales encontrados:</label><br><br>
-                <input type="radio" name="Malo" value="1">Malo
-                <input type="radio" name="Regular" value="2">Regular
-                <input type="radio" name="Bueno" value="3">Bueno
-                <input type="radio" name="Muy Bueno" value="4">Muy Bueno
-                <input type="radio" name="Excelente" value="5">Excelente<br><br>
-                <label for="comentarios">Sugerencias</label><br><br><textarea name="comentarios"  rows="5" cols="30"></textarea>
+                <input type="radio" name="nalo" value="1">Malo
+                <input type="radio" name="regular" value="2">Regular
+                <input type="radio" name="bueno" value="3">Bueno
+                <input type="radio" name="muy bueno" value="4">Muy Bueno
+                <input type="radio" name="excelente" value="5">Excelente<br><br>
+                <label for="comentarios">Sugerencias</label><br><br>
+                <textarea name="comentarios" rows="5" cols="30"></textarea>
                 <br><br>
                 <input type="submit" value="Submit"><br><br>
-              </form>
-         </div> 
-     </aside>
+            </form>
+        </div>
+    </aside>
+
+    <footer>
+        <div class="pie"><h6>Contacto: repositoriogeneral@repo.com.ar</h6></div>
+    </footer>
 </body>
 </html>

@@ -3,32 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href="/css/styles.css" >
+    <link rel="stylesheet" href="/css/styles.css">
     <title>Recursos para todos los niveles</title>
+
 </head>
 <body>
     <header>
-        <section class="encabezado">
-            <img src="Imagenes\Biblioteca.jpg" alt="Biblioteca"> <h1>Recursos para todos los niveles</h1></section>
+        <div class="container">
+            <a href="index.html"> <img src="imagenes/Biblioteca.jpg" alt="logo de Reservorio Educativo" class="logo"></a>
+            <h1 class="title">Recursos para todos los niveles</h1>
+        </div>
     </header>
-    <section>
-        <div class="Formulario">
-        <a href= "Formulario.html"> ¿Te gustaria formar parte de nuestra comunidad? </a></section><!--Poner un boton que te lleve a un formulario de registro-->
+    <div class="container">
+        <section>
+            <div class="formulario">
+                <a href="formulario.html">¿Te gustaría formar parte de nuestra comunidad?</a>
             </div>
-    <div class="Bajada"><p>Estas en un página en la que vas a encontrar todos los recursos necesarios para tus clases</p></div>
-    
-     <nav>
-        <main><!--Darle el estilo con flex-->
-            <div class="Niveles conteiner ">
-                <div class="Nivel Primario">Nivel Primario</div>
-                <div class="Nivel Secundario">Nivel Secundario</div>
+            <div class="bajada">
+                <p>Estás en una página en la que encontrarás todos los recursos necesarios para tus clases.</p>
             </div>
-        </main>
-     </nav>
-     <iframe></iframe><!--aca va un iframe mapa-->
- <section></section>   <!--aca van las redes--> 
+            <nav>
+                <main class="niveles container">
+                    <div class="nivel Primario"><a href="primaria.html">Nivel Primario</a></div>
+                    <div class="nivel Secundario"><a href="secundaria.html">Nivel Secundario</a></div>
+                </main>
+            </nav>
+        </section>
+    </div>
+    <iframe></iframe>
+    <section><!--aca van las redes--></section>
     <footer>
-        <div class="Pie"><h6>Contacto: repositoriogeneral@repo.com.ar</h6></div>
+        <div class="pie"><h6>Contacto: repositoriogeneral@repo.com.ar</h6></div>
     </footer>
 </body>
 </html>

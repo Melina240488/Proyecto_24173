@@ -1,30 +1,141 @@
-* {
-    margin: 10px; /*margin establece el margen para los cuatro lados*/
-    padding: 5px; /*padding establece el espacio de relleno*/
-    background-color: lightgreen; /*cambia el color de relleno*/
-    font-family: Verdana; /*cambia el tipo de letra*/
-    }
-
-body{
-   text-align: center;
-   font: 85 Verdana;
-   color: blueviolet;
-   background-color: azure;
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
+/* Estilos para el encabezado */
 header {
-    grid-column: 1 / 3;
-    grid-row: 1;
-  }
-  
-.container {
-    display: grid;
-    grid-template-columns: 200px 200px 200px;
-  }
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  position: relative; /* Añade posición relativa para el logo */
+}
 
-.encabezado{
-    background-color: brown;
-    padding: 10px;
-    color:antiquewhite;
-    text-align:  center
+/* Estilos para el contenedor principal */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Cambiamos a una distribución de 3 columnas igualmente espaciadas */
+  gap: 20px; /* Agregamos espacios entre los elementos */
+}
+
+/* Estilos para los niveles */
+.nivel {
+  background-color: #007bff; /* Cambia el color de fondo */
+  color: white; /* Cambia el color del texto */
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px; /* Agrega bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar el ratón */
+}
+
+.nivel:hover {
+  background-color: #0056b3; /* Cambia el color de fondo al pasar el ratón */
+}
+
+/* Estilos para el título */
+.title {
+  font-size: 32px; 
+  color: #b8b3b3; 
+  text-align: center; 
+}
+
+/* Estilos para los enlaces */
+a {
+  text-decoration: none; /* Elimina las líneas subrayadas */
+  color: inherit; /* Hereda el color del texto del contenedor principal */
+}
+
+/* Estilos para la barra lateral */
+aside {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-top: 20px; /* Agregamos un margen superior */
+}
+
+/* Estilos para el pie de página */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Estilos para el logo */
+.logo {
+  width: 100px; /* Tamaño inicial del logo */
+  height: auto;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.logo:hover {
+  transform: scale(1.1); /* Escala el logo al pasar el cursor por encima */
+}
+
+/* Efecto de iluminación */
+.logo::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 70px; /* Ajusta el tamaño según necesites */
+  height: 70px; /* Ajusta el tamaño según necesites */
+  background-color: rgba(255, 255, 255, 0.5); /* Color y opacidad del efecto de iluminación */
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease; /* Agrega transición para la opacidad */
+}
+
+.logo:hover::after {
+  opacity: 1; /* Muestra el efecto de iluminación al pasar el cursor por encima */
+}
+
+/* Estilos para el formulario */
+.formulario {
+  background-color: #f9f9f9;
+  padding: 20px; 
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.formulario label {
+  display: block; 
+  margin-bottom: 5px; 
+}
+
+.formulario input[type="text"],
+.formulario input[type="date"],
+.formulario textarea {
+  width: 100%; 
+  padding: 10px; 
+  margin-bottom: 10px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  box-sizing: border-box; 
+}
+
+.formulario input[type="submit"] {
+  background-color: #007bff; 
+  color: #fff; 
+  padding: 10px 20px;
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+}
+
+.formulario input[type="submit"]:hover {
+  background-color: #0056b3;
 }
