@@ -22,22 +22,44 @@ header {
   margin: 0 auto;
   padding: 20px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Cambiamos a una distribución de 3 columnas igualmente espaciadas */
-  gap: 20px; /* Agregamos espacios entre los elementos */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+  justify-content: center; 
+}
+.btn-formulario{
+  margin-bottom: 20px;
+  background-color: #ff6666;
+  padding: 20px; 
+  border-radius: 10px; 
+  margin-bottom: 20px; 
+}
+
+.bajada {
+  margin-bottom: 20px; 
 }
 
 /* Estilos para los niveles */
-.nivel {
-  background-color: #007bff; /* Cambia el color de fondo */
-  color: white; /* Cambia el color del texto */
-  padding: 10px;
-  text-align: center;
-  border-radius: 5px; /* Agrega bordes redondeados */
-  cursor: pointer; /* Cambia el cursor al pasar el ratón */
+.niveles-container {
+  list-style: none; 
+  padding: 0; 
+  display: flex; 
+  justify-content: space-between; 
 }
-
-.nivel:hover {
-  background-color: #0056b3; /* Cambia el color de fondo al pasar el ratón */
+.nivel-primario,
+.nivel-secundario {
+  flex: 1; 
+  margin-bottom: 10px; 
+  background-color: #2fff63; 
+  border: 1px solid #ccc; 
+  padding: 20px; 
+  border-radius: 10px;
+  text-align: center; 
+}
+.nivel-primario {
+  margin-right: 20px; 
+}
+.nivel-secundario {
+  margin-left: 20px; 
 }
 
 /* Estilos para el título */
@@ -67,7 +89,9 @@ footer {
   text-align: center;
   padding: 20px 0;
 }
-
+footer a{
+  color: white;
+}
 /* Estilos para el logo */
 .logo {
   width: 100px; /* Tamaño inicial del logo */
