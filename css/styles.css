@@ -108,25 +108,6 @@ footer a{
   transform: scale(1.1); /* Escala el logo al pasar el cursor por encima */
 }
 
-/* Efecto de iluminación */
-.logo::after {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  width: 70px; /* Ajusta el tamaño según necesites */
-  height: 70px; /* Ajusta el tamaño según necesites */
-  background-color: rgba(255, 255, 255, 0.5); /* Color y opacidad del efecto de iluminación */
-  border-radius: 50%;
-  z-index: -1;
-  opacity: 0;
-  transition: opacity 0.3s ease; /* Agrega transición para la opacidad */
-}
-
-.logo:hover::after {
-  opacity: 1; /* Muestra el efecto de iluminación al pasar el cursor por encima */
-}
-
 /* Estilos para el formulario */
 .formulario {
   background-color: #f9f9f9;
