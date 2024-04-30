@@ -4,44 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
-    <title>Recursos para todos los niveles</title>
+    <script src="https://kit.fontawesome.com/fb682e27c2.js" crossorigin="anonymous"></script> <!--Para Iconos de redes-->
+    <title>Formulario</title>
 </head>
 <body>
     <header>
         <div>
             <a href="index.html"> <img src="imagenes/logoBiblio.png" alt="logo de Reservorio Educativo" class="logo"></a>
-            <h1 class="title">Formulario De Contacto</h1>
+            <h1 class="title">Reservorio Educativo</h1>
         </div>
     </header>
-    <aside>
-        <div class="formulario-de-sugerencias">
-            <h4>Formulario de sugerencias</h4>
-            <form action="/action_page.php" method="post">
-                <label for="fname">Nombres:</label>
-                <input type="text" id="fname" name="fname"><br><br>
-                <label for="lname">Apellido:</label>
-                <input type="text" id="lname" name="lname"><br><br>
-                <label for="birthDate">Fecha de nacimiento:</label><br><br>
-                <input type="date" name="birthdate"><br><br>
-                <label for="radio">Nivel:</label><br><br>
-                <input type="radio" name="nivel Primario" value="1">Nivel Primario
-                <input type="radio" name="nivel Secundario" value="2">Nivel Secundario
-                <br><br>
-                <label for="radio">Grado de satisfacción con los materiales encontrados:</label><br><br>
-                <input type="radio" name="nalo" value="1">Malo
-                <input type="radio" name="regular" value="2">Regular
-                <input type="radio" name="bueno" value="3">Bueno
-                <input type="radio" name="muy bueno" value="4">Muy Bueno
-                <input type="radio" name="excelente" value="5">Excelente<br><br>
-                <label for="comentarios">Sugerencias</label><br><br>
-                <textarea name="comentarios" rows="5" cols="30"></textarea>
-                <br><br>
-                <input type="submit" value="Submit"><br><br>
-            </form>
-        </div>
-    </aside>
+    <menu>
+        <h4>Formulario de sugerencias</h4>
+        <form action="/action_page.php" target="_blank" class="formulario">
+            <label for="firstname">Nombre: </label><input type="text" name="firstname" placeholder="ingrese su nombre aqui.."> <br><br> 
+            <label for="lastname">Apellido: </label><input type="text" name="lastname" placeholder="ingrese su apellido aqui.."> <br><br>
+            <label for="birthdate">Fecha de nacimiento: </label><input type="date" name="birthdate" placeholder="ingrese su fecha de nacimiento aqui.."> <br><br>
+            
+            <p>Rol:
+                <input type="radio" name="rol" value="docente" checked>Docente
+                <input type="radio" name="rol" value="estudiante">Estudiante
+            </p><br>
 
+            <p>Nivel:
+                <input type="checkbox" name="nivel" value="primario" checked>Primario
+                <input type="checkbox" name="nivel" value="secundario">Secundario
+            </p><br>
+
+            <p>Grado de satisfacción con los materiales encontrados:
+                <select name="grado">
+                    <option value="" cheched>Seleccione una opcion</option>
+                    <option value="malo">Malo</option>
+                    <option value="regular">Regular</option>
+                    <option value="bueno">Bueno</option>
+                    <option value="muy_bueno">Muy Bueno</option>
+                    <option value="exelente">Excelente</option>
+                </select>
+            </p><br>
+
+            <label for="sugerencia">Sugerencia:</label><br><textarea name="sugerencia" cols="30" rows="5"></textarea><br><br>
+
+            <input type="submit" value="Enviar"><br><br>
+        </form>
+    </menu>
     <footer>
+        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
         <div class="pie"><h6>Contacto: repositoriogeneral@repo.com.ar</h6></div>
     </footer>
 </body>
