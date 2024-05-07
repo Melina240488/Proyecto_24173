@@ -1,3 +1,167 @@
+/* -------- SECCION BANNER -------- */
+#container-banner{
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  padding: 20px;
+}
+
+/* ocupa todo el contenedor sin sobrepasarse */
+#container-banner img{
+  width: 100%;
+  height: 100%; 
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+/*------------- seccion de indices--------------- */
+#indice{
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 55px;
+}
+#indice h2{
+  text-align: center;
+}
+#contenido-indice{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.cards{
+  background-color: white;
+  margin: 0 auto; 
+  width: 250px;
+  padding: 18px;
+  border-radius: 10px;  
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#card-1-grado{
+  border: 1px solid #ffcc00;
+}
+#card-2-grado{
+  border: 1px solid #ff33a1;
+}
+#card-3-grado{
+  border: 1px solid #33ff94;
+}
+#card-4-grado{
+  border: 1px solid #3364ff;
+}
+#card-5-grado{
+  border: 1px solid #d833ff;
+}
+#card-6-grado{
+  border: 1px solid #ff5733;
+}
+.titulo-card{
+  text-align: center;
+}
+.boton-card{
+  color: white;
+  margin: 0 auto;
+  width: 50%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+#boton-1-grado{ 
+  background-color: #ffcc00;
+}
+#boton-2-grado{
+  background-color: #ff33a1;
+}
+#boton-3-grado{
+  background-color: #33ff94;
+}
+#boton-4-grado{
+  background-color: #3364ff;
+}
+#boton-5-grado{
+  background-color: #d833ff;
+}
+#boton-6-grado{
+  background-color: #ff5736;
+}
+/* ------ seccion primer grado -------*/
+
+#primer-grado{
+  /* display: none; ocultar elemento */
+  width: 80%;
+  margin: 0 auto;
+  background-color: #ffcc00;
+  margin-bottom: 35px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#primer-grado h2, #segundo-grado h2{
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 23px;
+  text-align: left;
+  /* margin-bottom: 15px; */
+}
+#sumas-basicas {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#sumas-basicas h3 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold; 
+  color: #333;
+  margin-bottom: 0;
+  margin-top: 35px;
+}
+#sumas-basicas #contenido {
+  margin-top: 0px;
+  padding: 0px 40px 40px 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+h4 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+h4+a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+h4+a:hover {
+  text-decoration: underline;
+}
+
+p,
+h4+ul li {
+  color: #666;
+  font-size: 16px;
+}
+/*----------- seccion segundo-grado------- */
+
+#segundo-grado{
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #ff33a1;
+}
+/* LOS ESTILOS DE AQUI PARA ARRIBA SON DE LA PAGINA PRIMARIA, LUEGO SUBO OTRO COMMIT JUNTANDO Y ADAPTANDOLOS A LOS ESTILOS GENERALES */
+
 /* Estilos generales */
 body {
   font-family: Arial, sans-serif;
@@ -6,80 +170,88 @@ body {
   background-color: #f4f4f4;
   color: #333;
 }
-
 /* Estilos para el encabezado */
 header {
   background-color: #333;
   color: #fff;
   padding: 20px 0;
+  height: 100px;
   text-align: center;
-  position: relative; /* Añade posición relativa para el logo */
+  position: relative;
+  margin-bottom: 35px;
+  /* Añade posición relativa para el logo */
 }
-
-/* Estilos para el contenedor principal */
-.container {
+/* --- estilos generales --------- */
+.container{
   width: 80%;
   margin: 0 auto;
   padding: 20px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 20px; 
-  justify-content: center; 
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
 }
-.btn-formulario{
+
+.btn-formulario {
   margin-bottom: 20px;
   background-color: #ff6666;
-  padding: 20px; 
-  border-radius: 10px; 
-  margin-bottom: 20px; 
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .bajada {
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 
 /* Estilos para los niveles */
 .niveles-container {
-  list-style: none; 
-  padding: 0; 
-  display: flex; 
-  justify-content: space-between; 
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
+
 .nivel-primario,
 .nivel-secundario {
-  flex: 1; 
-  margin-bottom: 10px; 
-  background-color: #2fff63; 
-  border: 1px solid #ccc; 
-  padding: 20px; 
+  flex: 1;
+  margin-bottom: 10px;
+  background-color: #2fff63;
+  border: 1px solid #ccc;
+  padding: 20px;
   border-radius: 10px;
-  text-align: center; 
+  text-align: center;
 }
+
 .nivel-primario {
-  margin-right: 20px; 
+  margin-right: 20px;
 }
+
 .nivel-secundario {
-  margin-left: 20px; 
+  margin-left: 20px;
 }
 
 /* Estilos para el título */
-.title {
-  font-size: 32px; 
-  color: #b8b3b3; 
-  text-align: center; 
+.title .titulo-card{
+  font-size: 32px;
+  color: #b8b3b3;
+  text-align: center;
 }
 
 /* Estilos para los enlaces */
 a {
-  text-decoration: none; /* Elimina las líneas subrayadas */
-  color: inherit; /* Hereda el color del texto del contenedor principal */
+  text-decoration: none;
+  /* Elimina las líneas subrayadas */
+  color: inherit;
+  /* Hereda el color del texto del contenedor principal */
 }
 
 /* Estilos para la barra lateral */
 menu {
   background-color: #f9f9f9;
   padding: 20px;
-  margin-top: 20px; /* Agregamos un margen superior */
+  margin-top: 20px;
+  /* Agregamos un margen superior */
 }
 
 /* Estilos para el pie de página */
@@ -89,12 +261,15 @@ footer {
   text-align: center;
   padding: 20px 0;
 }
-footer a{
+
+footer a {
   color: white;
 }
+
 /* Estilos para el logo */
 .logo {
-  width: 100px; /* Tamaño inicial del logo */
+  width: 80px;
+  /* Tamaño inicial del logo */
   height: auto;
   position: absolute;
   top: 10px;
@@ -105,7 +280,8 @@ footer a{
 }
 
 .logo:hover {
-  transform: scale(1.1); /* Escala el logo al pasar el cursor por encima */
+  transform: scale(1.1);
+  /* Escala el logo al pasar el cursor por encima */
 }
 
 /* Estilos para el formulario */
@@ -114,10 +290,12 @@ footer a{
   padding: 20px;
   border-radius: 10px;
 }
+
 .formulario label {
   display: block;
   margin-bottom: 10px;
 }
+
 .formulario input[type="text"],
 .formulario input[type="date"],
 .formulario textarea,
@@ -127,8 +305,9 @@ footer a{
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
+
 .formulario input[type="submit"] {
   background-color: #ff6666;
   color: white;
@@ -137,16 +316,20 @@ footer a{
   border-radius: 5px;
   cursor: pointer;
 }
+
 .formulario input[type="radio"],
 .formulario input[type="checkbox"] {
   margin-right: 5px;
 }
+
 .formulario textarea {
-  resize: vertical; 
+  resize: vertical;
 }
+
 .formulario select {
-  appearance: none; 
+  appearance: none;
 }
+
 /* Estilos para el título del formulario */
 menu h4 {
   font-size: 20px;
