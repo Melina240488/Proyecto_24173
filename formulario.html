@@ -17,36 +17,53 @@
     <menu>
         <h4>Formulario de sugerencias</h4>
         <form action="/action_page.php" target="_blank" class="formulario">
-            <label for="firstname">Nombre: </label><input type="text" name="firstname" placeholder="ingrese su nombre aqui.."> <br><br> 
-            <label for="lastname">Apellido: </label><input type="text" name="lastname" placeholder="ingrese su apellido aqui.."> <br><br>
-            <label for="birthdate">Fecha de nacimiento: </label><input type="date" name="birthdate" placeholder="ingrese su fecha de nacimiento aqui.."> <br><br>
-            
+            <label for="firstname">Nombre:</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Ingrese su nombre aquí..." required>
+      
+            <label for="lastname">Apellido:</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Ingrese su apellido aquí..." required>
+      
+            <label for="birthdate">Fecha de nacimiento:</label>
+            <input type="date" id="birthdate" name="birthdate" placeholder="Ingrese su fecha de nacimiento aquí..." required>
+      
             <p>Rol:
-                <input type="radio" name="rol" value="docente" checked>Docente
-                <input type="radio" name="rol" value="estudiante">Estudiante
-            </p><br>
-
+                <label>
+                    <input type="radio" name="rol" value="docente" checked>
+                    <span>Docente</span>
+                </label>
+                <label>
+                    <input type="radio" name="rol" value="noDocente">
+                    <span>No Docente</span>
+                </label>
+            </p>
+      
             <p>Nivel:
-                <input type="checkbox" name="nivel" value="primario" checked>Primario
-                <input type="checkbox" name="nivel" value="secundario">Secundario
-            </p><br>
-
-            <p>Grado de satisfacción con los materiales encontrados:
-                <select name="grado">
-                    <option value="" cheched>Seleccione una opcion</option>
-                    <option value="malo">Malo</option>
-                    <option value="regular">Regular</option>
-                    <option value="bueno">Bueno</option>
-                    <option value="muy_bueno">Muy Bueno</option>
-                    <option value="exelente">Excelente</option>
-                </select>
-            </p><br>
-
-            <label for="sugerencia">Sugerencia:</label><br><textarea name="sugerencia" cols="30" rows="5"></textarea><br><br>
-
-            <input type="submit" value="Enviar"><br><br>
+                <label>
+                    <input type="checkbox" name="nivel" value="primario" checked>
+                    <span>Primario</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="nivel" value="secundario">
+                    <span>Secundario</span>
+                </label>
+            </p>
+      
+            <label for="grado">Grado de satisfacción con los materiales encontrados:</label>
+            <select id="grado" name="grado" required>
+                <option value="" disabled selected>Seleccione una opción</option>
+                <option value="malo">Malo</option>
+                <option value="regular">Regular</option>
+                <option value="bueno">Bueno</option>
+                <option value="muy_bueno">Muy Bueno</option>
+                <option value="excelente">Excelente</option>
+            </select>
+        
+            <label for="sugerencia">Sugerencia:</label>
+            <textarea id="sugerencia" name="sugerencia" cols="30" rows="5" aria-label="Ingrese su sugerencia"></textarea>
+        
+            <button type="submit">Enviar</button>
         </form>
-    </menu>
+      </menu>
     <footer>
         <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
