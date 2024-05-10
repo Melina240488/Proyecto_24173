@@ -84,7 +84,7 @@
 #boton-6-grado{
   background-color: #ff5736;
 }
-}
+
 #primer-grado h2, #segundo-grado h2, #tercer-grado h2, #cuarto-grado h2, #quinto-grado h2, #sexto-grado h2 {
   width: 80%;
   margin: 0 auto;
@@ -104,7 +104,7 @@
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
+}
 #sumas-basicas {
   width: 80%;
   margin: 0 auto;
