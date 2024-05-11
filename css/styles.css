@@ -215,7 +215,7 @@ body {
   color: #333;
 }
 /* Estilos para el encabezado */
-header {
+.container-cabecera{
   background-color: #333;
   color: #fff;
   padding: 20px 0;
@@ -223,8 +223,8 @@ header {
   text-align: center;
   position: relative;
   margin-bottom: 35px;
-  /* Añade posición relativa para el logo */
 }
+
 /* --- estilos generales --------- */
 .container {
   display: flex;
@@ -433,4 +433,67 @@ menu h4 {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   padding-bottom: 10px;
   border-bottom: 2px solid #720000a1;
+}
+
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 720px) {
+  .container {
+    padding: 10px;
+  }
+
+  .container-cabecera .title{
+    position: relative;
+    left: 30px;
+  }
+
+  .logo {
+    width: 80px;
+    /* Tamaño inicial del logo */
+    height: auto;
+    left: 20px;
+    padding-right: 10px;
+  }
+  .niveles-container {
+    flex-direction: column;
+  }
+
+  .nivel-primario,
+  .nivel-secundario {
+    margin: 10px 0;
+  }
+
+  .nivel-primario {
+    margin-right: 0;
+  }
+
+  .nivel-secundario {
+    margin-left: 0;
+  }
+
+  .nivel-primario img,
+  .nivel-secundario img {
+    width: 100%;
+    max-width: 550px;
+  }
+}
+
+/* Estilos para tabletas */
+@media (min-width: 1280px) and (max-width: 800px) {
+
+  .container {
+    padding: 20px;
+  }
+
+  .niveles-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nivel-primario,
+  .nivel-secundario {
+    width: 45%;
+    margin: 10px;
+  }
+
 }
