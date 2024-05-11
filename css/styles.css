@@ -254,16 +254,16 @@ header {
 
 .nivel-primario,
 .nivel-secundario {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 10px;
   background-color: #2fff63;
   border: 1px solid #ccc;
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   overflow: hidden;
   transition: 0.2s;
-  text-align: center;
-  object-fit: cover;
 }
 
 .nivel-primario:hover,
@@ -273,20 +273,12 @@ header {
   box-shadow: 0px 0px 1px 2px;
 }
 
-.nivel-primario img,
-.nivel-secundario img{
-  width: 600px;
-  height: auto;
-  border-radius: 10px;
-  opacity: 0.6;
-}
-
 .nivel-primario {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .nivel-secundario {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .nivel-link {
@@ -295,11 +287,17 @@ header {
   color: inherit;
 }
 
-.nivel-titulo{
-  font-size: 32px;
-  color: #000000c4;
-  text-align: center;
-  padding-bottom: 10px;
+.nivel-titulo {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.nivel-primario img,
+.nivel-secundario img {
+  width: 600px;
+  height: auto;
+  border-radius: 10px;
+  opacity: 0.6;
 }
 
 /* Estilos para el título */
