@@ -15,9 +15,6 @@
         </div>
     </header>
     <main>
-        <section id="container-banner">
-            <img src="Imagenes/banner.png" alt="banner">
-        </section>
         <section id="indice">
             <h2>Temario por año</h2>
             <div id="contenido-indice">
@@ -30,7 +27,7 @@
                         <li>Probabilidad y estadística</li>
                     </ul>
                     <div class="boton-card" id="boton-1-grado">
-                        <a href="#primer-grado">Ver mas</a>
+                        <a href="#primer-grado" onclick="mostrar('primer-grado')">Ver mas</a>
                     </div>
                 </article>
                 <article class="cards" id="card-2-grado">
@@ -42,7 +39,7 @@
                         <li>Medidas de tendencia central: moda, media y mediana. Fenómenos aleatorios</li>
                     </ul>
                     <div class="boton-card" id="boton-2-grado">
-                        <a href="#segundo-grado">Ver mas</a>
+                        <a href="#segundo-grado" onclick="mostrar('segundo-grado')">Ver mas</a>
                     </div>
                 </article>
                 <article class="cards" id="card-3-grado">
@@ -54,7 +51,7 @@
                         <li>Probabilidad y estadística</li>
                     </ul>
                     <div class="boton-card" id="boton-3-grado">
-                        <a href="#tercer-grado">Ver mas</a>
+                        <a href="#tercer-grado" onclick="mostrar('tercer-grado')">Ver mas</a>
                     </div>
                 </article>
                 <article class="cards" id="card-4-grado">
@@ -66,7 +63,7 @@
                         <li>Combinatoria, Binomio de Newton, espacio muestral, sucesos independientes y probabilidad condicional</li>
                     </ul>
                     <div class="boton-card" id="boton-4-grado">
-                        <a href="#cuarto-grado">Ver mas</a>
+                        <a href="#cuarto-grado" onclick="mostrar('cuarto-grado')">Ver mas</a>
                     </div>
                 </article>
                 <article class="cards" id="card-5-grado">
@@ -78,7 +75,7 @@
                         <li>Estadística: muestra, parámetros de posición y parámetros de dispersión </li>
                     </ul>
                     <div class="boton-card" id="boton-5-grado">
-                        <a href="#quinto-grado">Ver mas</a>
+                        <a href="#quinto-grado" onclick="mostrar('quinto-grado')">Ver mas</a>
                     </div>
                 </article>
                 <article class="cards" id="card-6-grado">
@@ -90,12 +87,12 @@
                         <li>Distribución Normal y Binomial</li>
                     </ul>
                     <div class="boton-card" id="boton-6-grado">
-                        <a href="#sexto-grado">Ver mas</a>
+                        <a href="#sexto-grado" onclick="mostrar('sexto-grado')">Ver mas</a>
                     </div>
                 </article>
             </div>
         </section>
-        <section id="primer-grado">
+        <section id="primer-grado" class="grados-info">
             <h2>Primer Grado</h2>
             <article id="sumas-basicas">
                 <h3>Sumas Basicas</h3>
@@ -130,7 +127,7 @@
                 </div>
             </article>
         </section>
-        <section id="segundo-grado">
+        <section id="segundo-grado" class="grados-info">
             <h2>Segundo Grado</h2>
             <article id="sumas-basicas">
                 <h3>Sumas Basicas</h3>
@@ -165,7 +162,7 @@
                 </div>
             </article>
         </section>
-        <section id="tercer-grado">
+        <section id="tercer-grado" class="grados-info">
             <h2>Primer Grado</h2>
             <article id="sumas-basicas">
                 <h3>Sumas Basicas</h3>
@@ -200,7 +197,7 @@
                 </div>
             </article>
         </section>
-        <section id="cuarto-grado">
+        <section id="cuarto-grado" class="grados-info">
             <h2>Primer Grado</h2>
             <article id="sumas-basicas">
                 <h3>Sumas Basicas</h3>
@@ -235,7 +232,7 @@
                 </div>
             </article>
         </section>
-        <section id="quinto-grado">
+        <section id="quinto-grado" class="grados-info">
             <h2>Primer Grado</h2>
             <article id="sumas-basicas">
                 <h3>Sumas Basicas</h3>
@@ -270,7 +267,7 @@
                 </div>
             </article>
         </section>
-        <section id="sexto-grado">
+        <section id="sexto-grado" class="grados-info">
             <h2>Primer Grado</h2>
             <article id="sumas-basicas">
                 <h3>Sumas Basicas</h3>
@@ -313,5 +310,6 @@
         <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
         <div class="pie"><h6>Contacto: repositoriogeneral@repo.com.ar</h6></div>
     </footer>
+    <script src="app/mostrarOcultarContenido.js"></script>
 </body>
 </html>

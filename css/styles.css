@@ -1,17 +1,6 @@
-/* -------- SECCION BANNER -------- */
-#container-banner{
-  width: 80%;
-  margin: 0 auto;
-  margin-bottom: 35px;
-  padding: 20px;
-}
-
-/* ocupa todo el contenedor sin sobrepasarse */
-#container-banner img{
-  width: 100%;
-  height: 100%; 
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  
+.grados-info{
+  display: none;
 }
 
 /*------------- seccion de indices--------------- */
