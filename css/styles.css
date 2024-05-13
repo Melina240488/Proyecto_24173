@@ -84,7 +84,7 @@
 }
 /* ------ seccion primer grado -------*/
 
-#primer-grado{
+#primer-grado, #fundacion{
   /* display: none; ocultar elemento */
   width: 80%;
   margin: 0 auto;
