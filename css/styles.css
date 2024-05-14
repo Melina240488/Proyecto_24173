@@ -200,37 +200,88 @@ h4+ul li {
 /* LOS ESTILOS DE AQUI PARA ARRIBA SON DE LA PAGINA PRIMARIA, LUEGO SUBO OTRO COMMIT JUNTANDO Y ADAPTANDOLOS A LOS ESTILOS GENERALES */
 
 /* Estilos generales */
+
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
 }
+
 /* Estilos para el encabezado */
 .container-cabecera{
   background-color: #333;
   color: #fff;
-  padding: 20px 0;
-  height: 100px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-title {
+  flex: 1;
   text-align: center;
-  position: relative;
-  margin-bottom: 35px;
+}
+
+.container-title h1 {
+  margin: 0;
+  font-size: 35px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  margin-left: 10px;
+  border-radius: 5px;
+  background-color: #490707;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #8f0f0f;
+}
+
+/* Estilos para el logo */
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  /* Escala el logo al pasar el cursor por encima */
 }
 
 /* --- estilos generales --------- */
 .container {
+  flex: 1;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-}
-
-.btn-formulario {
-  margin-bottom: 20px;
-  background-color: #ff6666;
   padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 20px;
+  text-align: center;
 }
 
 .bajada {
@@ -321,30 +372,17 @@ menu {
 footer {
   background-color: #333;
   color: #fff;
+  padding: 20px;
   text-align: center;
-  padding: 20px 0;
 }
 
-footer a {
-  color: white;
+.footer a {
+  color: #fff;
+  margin: 0 10px;
 }
 
-/* Estilos para el logo */
-.logo {
-  width: 80px;
-  /* Tamaño inicial del logo */
-  height: auto;
-  position: absolute;
-  top: 10px;
-  left: 50px;
-  border-radius: 20px;
-  transition: transform 0.3s ease;
-  z-index: 1;
-}
-
-.logo:hover {
-  transform: scale(1.1);
-  /* Escala el logo al pasar el cursor por encima */
+.footer .pie {
+  margin-top: 10px;
 }
 
 /* Estilos para el formulario */
@@ -360,10 +398,12 @@ footer a {
 .formulario label {
   display: block;
   margin-bottom: 5px;
+  font-weight: bold;
 }
 
 .formulario input[type="text"],
 .formulario input[type="date"],
+.formulario input[type="file"],
 .formulario textarea,
 .formulario select {
   width: 100%;
@@ -373,10 +413,12 @@ footer a {
   border-radius: 5px;
   box-sizing: border-box;
   transition: border-color 0.3s ease;
+  background-color: #ffffff;
 }
 
 .formulario input[type="text"]:focus,
 .formulario input[type="date"]:focus,
+.formulario input[type="file"]:focus,
 .formulario textarea:focus,
 .formulario select:focus {
   outline: none;
@@ -393,6 +435,12 @@ footer a {
   background-repeat: no-repeat;
   background-position: right 8px center;
   padding-right: 30px;
+}
+
+.formulario input[type="file"] {
+  padding: 5px;
+  background-color: #ffffff;
+  cursor: pointer;
 }
 
 .formulario button[type="submit"] {
@@ -418,6 +466,20 @@ footer a {
   margin-left: 5px;
 }
 
+/* Estilos para mensaje de campos obligatorios*/
+
+.campos-text {
+  font-size: 14px; 
+  color: #ff0000; 
+  font-weight: bold; 
+  margin-bottom: 20px; 
+  text-align: center; 
+  background-color: #fff4f4;
+  padding: 10px; 
+  border: 1px solid #ff0000; 
+  border-radius: 5px; 
+}
+
 /* Estilos para el título del formulario */
 menu h4 {
   text-align: center;
@@ -429,6 +491,19 @@ menu h4 {
   border-bottom: 2px solid #720000a1;
 }
 
+.btn-volver {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #490707;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.btn-volver:hover {
+  background-color: #8f0f0f;
+}
 
 /* Estilos para dispositivos móviles */
 @media (max-width: 720px) {
