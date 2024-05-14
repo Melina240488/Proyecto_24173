@@ -18,67 +18,54 @@ padding: 10px;}
 }
 #indice h2{
   text-align: center;
+  margin: 40px 0px;
 }
 #contenido-indice{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 70px;
 }
-.cards{
+.card{
   background-color: white;
   margin: 0 auto; 
   width: 250px;
-  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 18px;
   border-radius: 10px;  
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 25px 25px 5px 0px rgba(0, 0, 0, 0.2);
+  border-bottom: 10px solid #333;
 }
-#card-1-grado{
-  border: 1px solid #ffcc00;
+.card-cuerpo{
+  padding: 18px;
 }
-#card-2-grado{
-  border: 1px solid #ff33a1;
+.card-cuerpo ul{
+  margin: 25px 0px;
 }
-#card-3-grado{
-  border: 1px solid #33ff94;
+.card ul li{
+  color: #333;
 }
-#card-4-grado{
-  border: 1px solid #3364ff;
-}
-#card-5-grado{
-  border: 1px solid #d833ff;
-}
-#card-6-grado{
-  border: 1px solid #ff5733;
+.card .card-titulo{
+  border-radius: 10px 10px 0px 0px;
+  background-color: #333;
 }
 .titulo-card{
   text-align: center;
-}
-.boton-card{
   color: white;
+}
+.card-boton a:hover{
+  color: #007bff;
+  text-shadow: 0px 0px 5px white, 0px 0px 5px #333;
+}
+.card-boton{
+  color: #333;
   margin: 0 auto;
   width: 50%;
-  margin-bottom: 20px;
-  padding: 10px;
+  padding: 15px 20px;
   border-radius: 5px;
   text-align: center;
-}
-#boton-1-grado{ 
-  background-color: #ffcc00;
-}
-#boton-2-grado{
-  background-color: #ff33a1;
-}
-#boton-3-grado{
-  background-color: #33ff94;
-}
-#boton-4-grado{
-  background-color: #3364ff;
-}
-#boton-5-grado{
-  background-color: #d833ff;
-}
-#boton-6-grado{
-  background-color: #ff5736;
+  border: 1px solid #333;
 }
 
 #primer-grado h2, #segundo-grado h2, #tercer-grado h2, #cuarto-grado h2, #quinto-grado h2, #sexto-grado h2 {
@@ -502,5 +489,5 @@ menu h4 {
     width: 45%;
     margin: 10px;
   }
-
+  
 }
