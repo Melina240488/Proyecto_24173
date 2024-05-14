@@ -256,6 +256,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 20px; 
 }
 
 .nivel-primario,
@@ -263,28 +264,20 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 10px;
-  background-color: #2fff63;
+  background-color: #bfbbff; /* Fondo oscuro */
+  color: #000000; /* Texto claro para buen contraste */
   border: 1px solid #ccc;
-  padding: 10px;
+  padding: 15px;
   border-radius: 10px;
   overflow: hidden;
-  transition: 0.2s;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, opacity 0.4s ease;
 }
 
 .nivel-primario:hover,
 .nivel-secundario:hover {
-  transform: scale(1.0);
-  color: var(--clr-main-light);
-  box-shadow: 0px 0px 1px 2px;
-}
-
-.nivel-primario {
-  margin-right: 20px;
-}
-
-.nivel-secundario {
-  margin-left: 20px;
+  transform: scale(1.05);
+  color: #00000075; /* Color amarillo claro en hover para resaltar */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .nivel-link {
@@ -296,14 +289,22 @@ body {
 .nivel-titulo {
   margin-bottom: 10px;
   font-weight: bold;
+  text-align: center;
 }
 
 .nivel-primario img,
 .nivel-secundario img {
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
   height: auto;
   border-radius: 10px;
-  opacity: 0.6;
+  opacity: 0.8;
+  transition: opacity 0.4s ease;
+}
+
+.nivel-primario:hover img,
+.nivel-secundario:hover img {
+  opacity: 1; 
 }
 
 /* Estilos para el título */
