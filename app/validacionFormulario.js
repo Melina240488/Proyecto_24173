@@ -24,3 +24,44 @@ form.addEventListener('submit', (event) => {
         alert('Debes tener al menos 18 años para enviar este formulario.');
     }
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.querySelector("form");
+    form.addEventListener("submit", function(event) {
+        let valid = true;
+
+        // Validar nombre
+        const firstname = document.getElementById("firstname").value.trim();
+        if (firstname === "") {
+            alert("El campo 'Nombre' es obligatorio.");
+            valid = false;
+        }
+
+        // Validar apellido
+        const lastname = document.getElementById("lastname").value.trim();
+        if (lastname === "") {
+            alert("El campo 'Apellido' es obligatorio.");
+            valid = false;
+        }
+
+        // Validar fecha de nacimiento
+        const birthdate = document.getElementById("birthdate").value;
+        if (birthdate === "") {
+            alert("El campo 'Fecha de nacimiento' es obligatorio.");
+            valid = false;
+        }
+
+        // Validar grado de satisfacción
+        const grado = document.getElementById("grado").value;
+        if (grado === "") {
+            alert("El campo 'Grado de satisfacción' es obligatorio.");
+            valid = false;
+        }
+
+        // Evitar el envío del formulario si alguna validación falla
+        if (!valid) {
+            event.preventDefault();
+        }
+    });
+});
