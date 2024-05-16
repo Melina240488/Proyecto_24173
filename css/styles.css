@@ -1,4 +1,3 @@
-  
 .grados-info{
   display: none;
 }
@@ -19,9 +18,13 @@ padding: 10px;}
   padding: 10px;}
 
 /*------------- seccion de indices--------------- */
-#indice{
-  width: 80%;
+#indice, .card , .card-boton, .grados-info, .grados-info h2, #sumas-basicas,#contenido, #contenido div {
   margin: 0 auto;
+}
+#indice, .grados-info h2, #contenido, .grados-info{
+  width: 80%;
+}
+#indice{
   margin-bottom: 55px;
 }
 #indice h2{
@@ -30,12 +33,12 @@ padding: 10px;}
 }
 #contenido-indice{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 70px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 50px;
+  row-gap: 70px;
 }
 .card{
   background-color: white;
-  margin: 0 auto; 
   width: 250px;
   display: flex;
   flex-direction: column;
@@ -43,7 +46,24 @@ padding: 10px;}
   padding-bottom: 18px;
   border-radius: 10px;  
   box-shadow: 25px 25px 5px 0px rgba(0, 0, 0, 0.2);
-  border-bottom: 10px solid #333;
+}
+#card-1-grado{
+  border-bottom: 10px solid #000080; 
+}
+#card-2-grado{
+  border-bottom: 10px solid #000000; 
+}
+#card-3-grado{
+  border-bottom: 10px solid #800000; 
+}
+#card-4-grado{
+  border-bottom: 10px solid #490707; 
+}
+#card-5-grado{
+  border-bottom: 10px solid #4B0082; 
+}
+#card-6-grado{
+  border-bottom: 10px solid #333333; 
 }
 .card-cuerpo{
   padding: 18px;
@@ -56,8 +76,26 @@ padding: 10px;}
 }
 .card .card-titulo{
   border-radius: 10px 10px 0px 0px;
-  background-color: #333;
 }
+#fondo-titulo1, #primer-grado{
+  background-color: #000080;
+}
+#fondo-titulo2, #segundo-grado{
+  background-color:  #000000;
+}
+#fondo-titulo3, #tercer-grado{
+  background-color: #800000;
+}
+#fondo-titulo4, #cuarto-grado{
+  background-color: #490707;
+}
+#fondo-titulo5, #quinto-grado{
+  background-color: #4B0082;
+}
+#fondo-titulo6, #sexto-grado{
+  background-color:  #333333;
+}
+
 .titulo-card{
   text-align: center;
   color: white;
@@ -67,8 +105,6 @@ padding: 10px;}
   text-shadow: 0px 0px 5px white, 0px 0px 5px #333;
 }
 .card-boton{
-  color: #333;
-  margin: 0 auto;
   width: 50%;
   padding: 15px 20px;
   border-radius: 5px;
@@ -76,15 +112,12 @@ padding: 10px;}
   border: 1px solid #333;
 }
 
-#primer-grado h2, #segundo-grado h2, #tercer-grado h2, #cuarto-grado h2, #quinto-grado h2, #sexto-grado h2 {
-  width: 80%;
-  margin: 0 auto;
+.grados-info h2 {
   padding-top: 15px;
   padding-bottom: 23px;
   text-align: left;
-  /* margin-bottom: 15px; */
+  color: white;
 }
-/* ------ seccion primer grado -------*/
 
 #aboutus{
   width: 80%;
@@ -96,53 +129,41 @@ padding: 10px;}
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-#primer-grado{
-  /* display: none; ocultar elemento */
-  width: 80%;
-  margin: 0 auto;
-  background-color: #ffcc00;
-  margin-bottom: 35px;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+
 #sumas-basicas {
-  width: 80%;
-  margin: 0 auto;
+  width: 90%;
   background-color: #f9f9f9;
   border: 1px solid #ccc;
   border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 #sumas-basicas h3 {
   text-align: center;
   font-size: 24px;
-  font-weight: bold; 
-  color: #333;
+  font-weight: bold;
   margin-bottom: 0;
   margin-top: 35px;
 }
-#sumas-basicas #contenido {
-  margin-top: 0px;
+#contenido {
   padding: 0px 40px 40px 40px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
 }
 
-h4 {
+#sumas-basicas h3, h4, .card-boton{
   color: #333;
+}
+h4 {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-h4+a {
+.contenido-secundario a {
   color: #007bff;
   text-decoration: none;
   font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
 }
 
-h4+a:hover {
+.contenido-secundario a:hover {
   text-decoration: underline;
 }
 
@@ -151,61 +172,11 @@ h4+ul li {
   color: #666;
   font-size: 16px;
 }
-/*----------- seccion segundo-grado------- */
-
-#segundo-grado{
-  width: 80%;
-  margin: 0 auto;
+.grados-info{
   margin-bottom: 35px;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: #ff33a1;
 }
-/* ------ seccion tercer grado -------*/
-#tercer-grado{
-  width: 80%;
-  margin: 0 auto;
-  margin-bottom: 35px;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: #33ff94;
-}
-
-/* ------ seccion cuarto grado -------*/
-#cuarto-grado{
-  width: 80%;
-  margin: 0 auto;
-  margin-bottom: 35px;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: #3364ff;
-}
-
-/* ------ seccion quinto grado -------*/
-#quinto-grado{
-  width: 80%;
-  margin: 0 auto;
-  margin-bottom: 35px;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: #d833ff;
-}
-
-/* ------ seccion sexto grado -------*/
-#sexto-grado{
-  width: 80%;
-  margin: 0 auto;
-  margin-bottom: 35px;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: #ff5736;
-}
-/* LOS ESTILOS DE AQUI PARA ARRIBA SON DE LA PAGINA PRIMARIA, LUEGO SUBO OTRO COMMIT JUNTANDO Y ADAPTANDOLOS A LOS ESTILOS GENERALES */
 
 /* Estilos generales */
 
@@ -573,4 +544,44 @@ menu h4 {
     margin: 10px;
   }
   
+}
+@media only screen and (min-width: 320px) and (max-width: 955px){
+  .grados-info{
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px 0px;
+    border-radius: 0;
+    margin-bottom: 30px;
+  }
+  #contenido div{
+    width: 100%;
+  }
+  
+}
+@media only screen and (min-width: 956px) and (max-width: 1455px){
+  .grados-info{
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px 0px;
+    border-radius: 0;
+    margin-bottom: 30px;
+  }
+  #contenido div{
+    width: 100%;
+  }
+  .contenido-secundario, .contenido-principal{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .contenido-secundario div iframe{
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1456px) and (max-width: 2000px) {
+  #contenido{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
