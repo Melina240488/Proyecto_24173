@@ -484,48 +484,6 @@ menu h4 {
   background-color: #8f0f0f;
 }
 
-/* Estilos para dispositivos móviles */
-@media (max-width: 720px) {
-  .container {
-    padding: 10px;
-  }
-
-  .container-cabecera .title{
-    position: relative;
-    left: 30px;
-  }
-
-  .logo {
-    width: 80px;
-    /* Tamaño inicial del logo */
-    height: auto;
-    left: 20px;
-    padding-right: 10px;
-  }
-  .niveles-container {
-    flex-direction: column;
-  }
-
-  .nivel-primario,
-  .nivel-secundario {
-    margin: 10px 0;
-  }
-
-  .nivel-primario {
-    margin-right: 0;
-  }
-
-  .nivel-secundario {
-    margin-left: 0;
-  }
-
-  .nivel-primario img,
-  .nivel-secundario img {
-    width: 100%;
-    max-width: 550px;
-  }
-}
-
 /*Estilos para flecha ir hacia arriba*/
 .volver-arriba {
   position: fixed;
@@ -569,6 +527,48 @@ menu h4 {
   }
   100% {
       transform: translateY(0);
+  }
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 720px) {
+  .container {
+    padding: 10px;
+  }
+
+  .container-cabecera .title{
+    position: relative;
+    left: 30px;
+  }
+
+  .logo {
+    width: 80px;
+    /* Tamaño inicial del logo */
+    height: auto;
+    left: 20px;
+    padding-right: 10px;
+  }
+  .niveles-container {
+    flex-direction: column;
+  }
+
+  .nivel-primario,
+  .nivel-secundario {
+    margin: 10px 0;
+  }
+
+  .nivel-primario {
+    margin-right: 0;
+  }
+
+  .nivel-secundario {
+    margin-left: 0;
+  }
+
+  .nivel-primario img,
+  .nivel-secundario img {
+    width: 100%;
+    max-width: 550px;
   }
 }
 
