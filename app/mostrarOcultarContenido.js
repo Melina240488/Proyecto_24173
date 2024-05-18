@@ -8,3 +8,20 @@ function mostrar(grado) {
     // Mostrar el elemento correspondiente al grado seleccionado
     document.getElementById(grado).style.display = 'block';
 }
+
+
+window.addEventListener('scroll', function() {
+    const volverArriba = document.querySelector('.volver-arriba');
+    if (window.pageYOffset > 100) {
+        volverArriba.classList.add('mostrar');
+    } else {
+        volverArriba.classList.remove('mostrar');
+    }
+});
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}

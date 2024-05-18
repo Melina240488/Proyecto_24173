@@ -526,6 +526,52 @@ menu h4 {
   }
 }
 
+/*Estilos para flecha ir hacia arriba*/
+.volver-arriba {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.volver-arriba.mostrar {
+  opacity: 1;
+  visibility: visible;
+}
+
+.volver-arriba a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+  animation: rebote 1s infinite;
+}
+
+.volver-arriba a:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+@keyframes rebote {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
 /* Estilos para tabletas */
 @media (min-width: 1280px) and (max-width: 800px) {
 
