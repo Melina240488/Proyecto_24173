@@ -18,22 +18,22 @@ padding: 10px;}
   padding: 10px;}
 
 /*------------- seccion de indices--------------- */
-#indice, .card , .card-boton, .grados-info, .grados-info h2, #sumas-basicas,#contenido, #contenido div {
+#seccion1, .card , .card-boton, .grados-info, .grados-info h2, .sumas-basicas,.contenido, .contenido div {
   margin: 0 auto;
 }
-#indice, .grados-info h2, #contenido, .grados-info{
+#seccion1, .grados-info h2, .contenido, .grados-info{
   width: 80%;
 }
-#indice{
+#seccion1{
   margin-bottom: 55px;
 }
-#indice h2{
+#seccion1 h2{
   text-align: center;
   margin: 40px 0px;
 }
-#contenido-indice{
+#container-cards{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 50px;
   row-gap: 70px;
 }
@@ -74,7 +74,7 @@ padding: 10px;}
 .card ul li{
   color: #333;
 }
-.card .card-titulo{
+.card .card-header{
   border-radius: 10px 10px 0px 0px;
 }
 #fondo-titulo1, #primer-grado{
@@ -130,24 +130,24 @@ padding: 10px;}
 }
 
 
-#sumas-basicas {
+.sumas-basicas {
   width: 90%;
   background-color: #f9f9f9;
   border: 1px solid #ccc;
   border-radius: 10px;
 }
-#sumas-basicas h3 {
+.sumas-basicas h3 {
   text-align: center;
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 0;
   margin-top: 35px;
 }
-#contenido {
+.contenido {
   padding: 0px 40px 40px 40px;
 }
 
-#sumas-basicas h3, h4, .card-boton{
+.sumas-basicas h3, h4, .card-boton{
   color: #333;
 }
 h4 {
@@ -166,7 +166,13 @@ h4 {
 .contenido-secundario a:hover {
   text-decoration: underline;
 }
-
+.contenedor-video{
+  max-width: 100%;
+}
+.contenedor-video iframe{
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
 p,
 h4+ul li {
   color: #666;
@@ -574,7 +580,6 @@ menu h4 {
 
 /* Estilos para tabletas */
 @media (min-width: 1280px) and (max-width: 800px) {
-
   .container {
     padding: 20px;
   }
@@ -599,7 +604,7 @@ menu h4 {
     border-radius: 0;
     margin-bottom: 30px;
   }
-  #contenido div{
+  .contenido div{
     width: 100%;
   }
   
@@ -612,7 +617,7 @@ menu h4 {
     border-radius: 0;
     margin-bottom: 30px;
   }
-  #contenido div{
+  .contenido div{
     width: 100%;
   }
   .contenido-secundario, .contenido-principal{
@@ -621,13 +626,10 @@ menu h4 {
     gap: 20px;
   }
 
-  .contenido-secundario div iframe{
-    width: 100%;
-  }
 }
-@media only screen and (min-width: 1456px) and (max-width: 2000px) {
-  #contenido{
+/* @media only screen and (min-width: 1456px) and (max-width: 2000px) {
+  .contenido{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-}
+} */
