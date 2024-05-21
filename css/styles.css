@@ -209,7 +209,7 @@ body {
 
 .container-title {
   flex: 1;
-  text-align: center;
+  text-align:start;
 }
 
 .container-title h1 {
