@@ -13,17 +13,23 @@
 <body>
     <header class="container-cabecera">
         <div class="logo-container">
-            <a href="index.html"> 
-                <img src="Imagenes/Biblioteca.jpg" alt="logo de Reservorio Educativo" class="logo">
-            </a>
+          <a href="index.html">
+            <img src="Imagenes/Biblioteca.jpg" alt="logo de Reservorio Educativo" class="logo">
+          </a>
         </div>
         <div class="container-title">
-            <h1>Reservorio Secundaria</h1>
+          <h1>Reservorio</h1>
         </div>
-        <div class="nav-links">
+        <nav>
+          <div class="nav-links">
             <a href="formulario.html" class="nav-link">Unite</a>
             <a href="aboutus.html" class="nav-link">Acerca de nosotros</a>
-        </div>
+          </div>
+          <button class="menu-toggle">
+            <i class="fa-solid fa-bars fa-lg"></i>
+          </button>
+          <button class="close-menu">&#10005;</button> <!-- Botón de cierre -->
+        </nav>
     </header>
     <main>
         <section id="indice">
@@ -35,10 +41,11 @@
                     </div>
                     <div class="card-cuerpo">
                         <ul>
-                            <li>Geometría y magnitudes</li>
-                            <li>Números naturales y operaciones elementales</li>
-                            <li>Proporcionalidad, gráficos y álgebra</li>
-                            <li>Probabilidad y estadística</li>
+                            <li>Números naturales, fracciones, decimales, porcentajes.</li>
+                            <li>Expresiones algebraicas, ecuaciones de primer grado.</li>
+                            <li>Figuras geométricas básicas, áreas y perímetros.</li>
+                            <li>Propiedades de la materia, tabla periódica, reacciones químicas.</li>
+                            <li>Conceptos básicos de mecánica, movimiento, fuerzas y energía.</li>
                         </ul>
                     </div>
                     <div class="card-boton" id="boton-1-grado">
@@ -55,8 +62,9 @@
                             <li>Números enteros y racionales, notación científica</li>
                             <li>Funciones, función lineal, proporcionalidad directa e inversa, ecuaciones de primer
                                 grado</li>
+                            <li>Resolución de ecuaciones de segundo grado, sistemas de ecuaciones.</li>
                             <li>Medidas de tendencia central: moda, media y mediana. Fenómenos aleatorios</li>
-                        </ul>
+                      </ul>
                     </div>
                     <div class="card-boton" id="boton-2-grado">
                         <a href="#segundo-grado" onclick="mostrar('segundo-grado')">Ver mas</a>
@@ -136,88 +144,72 @@
             </div>
         </section>
         <section id="primer-grado" class="grados-info">
-            <h2>Primer Grado</h2>
+            <h2>Sexto grado</h2>
             <article id="sumas-basicas">
-                <h3>Sumas Basicas</h3>
+                <h3>Ecuaciones de primer grado</h3>
                 <div id="contenido">
                     <div class="contenido-principal">
                         <div>
                             <h4>Material teorico</h4>
-                            <p><strong> La suma es una operación matemática básica que combina dos o más números para
-                                    obtener un
-                                    total.</strong>
-                                En la suma, los números que se suman se llaman <strong><em>sumandos</em></strong> y el
-                                resultado se llama <em><strong>suma</strong></em>.
+                            <p><strong> Una ecuación de primer grado es una igualdad matemática con una o más incógnitas. </strong> Dichas incógnitas deben ser despejadas o resueltas para encontrar el valor numérico de la igualdad.
+                                Las ecuaciones de primer grado reciben este nombre porque sus variables (incógnitas) están elevadas a la<strong><em>primera potencia</em></strong>, que suele representarse solo con una X.
+                                Del mismo modo, el grado de la ecuación indica el número de soluciones posibles. Por lo tanto, una ecuación de primer grado (también llamada ecuación lineal) solo tiene una solución.
+                               
                             </p>
-                            <p>Por ejemplo, si tenemos 2 manzanas y luego agregamos 3 manzanas más, en total tendremos 5
-                                manzanas.
-                                Esto se representa como 2 + 3 = 5.</p>
+                            
                         </div>
                         <div>
-                            <h4>Material practico</h4>
+                            <h4>Material práctico</h4>
                             <ul>
-                                <li>Resuelva la siguiente suma: 1 + 4</li>
-                                <li>Resuelva la siguiente suma: 3 + 7</li>
-                                <li>Resuelva la siguiente suma: 5 + 2</li>
+                                <a href="https://www.matematicasonline.es/segundoeso/ejercicios/ecuaciones-1grado2.pdf" target="_blank">Enlace a ejercicios para practicar</a>
                             </ul>
                         </div>
                     </div>
                     <div class="contenido-secundario">
                         <div>
-                            <h4>Recursos didacticos</h4>
-                            <a href="https://arbolabc.com/juegos-de-sumas" target="_blank">Enlace a juegos online de
-                                sumas
-                                para niños</a>
-                            <a href="https://arbolabc.com/juegos-de-sumas" target="_blank">Enlace a juegos online de
-                                sumas
-                                para niños</a>
-                            <a href="https://arbolabc.com/juegos-de-sumas" target="_blank">Enlace a juegos online de
-                                sumas
-                                para niños</a>
+                            <h4>Recursos didácticos</h4>
+                            <a href="https://www.problemasyecuaciones.com/Ecuaciones/primer-grado/ecuaciones-primer-grado-resueltas-fracciones-parentesis-solucion.html" target="_blank">Enlace a ejercicios resueltos</a>
+                            <a href="https://www.matesfacil.com/ESO/Ecuaciones/resueltos-ecuaciones-ec.html" target="_blank">Enlace a ejercicios resueltos</a> 
                         </div>
                         <div>
                             <h4>Video complementario</h4>
-                            <iframe width="400" height="200" src="https://www.youtube.com/embed/oexd_Dfic_Q"
-                                frameborder="0" allowfullscreen></iframe>
+                            <iframe width="400" height="315" src="https://www.youtube.com/embed/lolGRSlyY5E?si=492S0iUlGeC3yK36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
             </article>
         </section>
         <section id="segundo-grado" class="grados-info">
-            <h2>Segundo Grado</h2>
+            <h2>Segundo Año</h2>
             <article id="sumas-basicas">
-                <h3>Multiplicaciones</h3>
+                <h3>Ecuaciones de segundo grado</h3>
                 <div id="contenido">
                     <div class="contenido-principal">
                         <div>
-                            <h4>Material teorico</h4>
-                            <p>La multiplicación es una forma muy rápida de sumar el mismo número una y otra vez.
-                                Por ejemplo, 2 x 3, podemos sumar el número 2, tres veces ( 2 + 2 + 2) o
-                                podemos hacerlo de forma mágica y veloz conociendo las tablas de multiplicar.
-                                Automáticamente, y sin tener que sumar, podremos saber que 2 x 3 es 6... ¡y sin sumar!
+                            <h4>Material teórico</h4>
+                            <p>Una <strong>ecuación de segundo grado</strong>​ o ecuación cuadrática de una variable es aquella que tiene la expresión general:𝑎𝑥2+𝑏𝑥+𝑐=0,𝑎≠0 donde x es la variable y a,b y c son constantes. Este polinomio se puede interpretar mediante la gráfica de una función cuadrática, es decir, por una parábola. Esta representación gráfica es útil, porque las abscisas de las intersecciones o punto de tangencia de esta gráfica, en el caso de existir, son las raíces reales de la ecuación.</p>
                         </div>
                         <div>
-                            <h4>Material practico</h4>
+                            <h4>Material práctico</h4>
                             <ul>
-                                <li>Resuelva la siguiente multiplicación: 5 x 4</li>
-                                <li>Resuelva la siguiente multiplicación: 7 x 3</li>
-                                <li>Resuelva la siguiente multiplicación: 10 x 6</li>
+                                <a href="https://www.superprof.es/apuntes/escolar/matematicas/algebra/ecuaciones/ejercicios-ecuaciones-de-segundo-grado.html"
+                                target="_blank">Enlace de ejercicios para practicar</a>
                             </ul>
                         </div>
                     </div>
                     <div class="contenido-secundario">
                         <div>
-                            <h4>Recursos didacticos</h4>
-                            <a href="https://arbolabc.com/juegos-tablas-de-multiplicar/mixta/puma-come-multiplicaciones"
-                                target="_blank">Enlace a juegos online de sumas
-                                para
-                                niños</a>
+                            <h4>Recursos didácticos</h4>
+                            <a href="https://www.problemasyecuaciones.com/Ecuaciones/segundo-grado/problemas-ecuaciones-segundo-grado-resueltas-solucion-formula-raices-factorizar.htmls"
+                                target="_blank">Enlace a ejercicios resueltos</a>
+                                <a href="https://blogs.ugto.mx/rea/clase-digital-5-metodos-de-solucion-de-ecuaciones-de-segundo-grado/"
+                                target="_blank">Enlace a ejericios resueltos</a>
+                                <a href="https://www.matematica.pt/es/util/calculadora-ecuaciones-cuadraticas.php"
+                                target="_blank">Enlace a calculadora de raíces</a>
                         </div>
                         <div>
                             <h4>Video complementario</h4>
-                            <iframe width="400" height="200" src="https://www.youtube.com/watch?v=WES-u3UPDRA"
-                                frameborder="0" allowfullscreen></iframe>
+                            <iframe width="400" height="315" src="https://www.youtube.com/embed/BxrJmKdPHRs?si=OjqNU6cvJKSIOfVD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -437,6 +429,7 @@
         </div>
     </footer>
     <script src="app/mostrarOcultarContenido.js"></script>
+    <script src="app/menu.js"></script>
 </body>
 
 </html>
