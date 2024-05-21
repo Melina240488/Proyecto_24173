@@ -2,12 +2,13 @@
   display: none;
 }
 .creacionpag{
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 20px;
-background-color: #81a2be;
-border-radius: 10px;
-padding: 10px;}
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  background-color: #81a2be;
+  border-radius: 10px;
+  padding: 10px;
+}
 
 .trayectoria{
   display: grid;
@@ -15,7 +16,16 @@ padding: 10px;}
   gap: 10px;
   background-color: #a9719b;
   border-radius: 10px;
-  padding: 10px;}
+  padding: 10px;
+}
+
+.creacionpag img{
+  border-radius: 10px;
+}
+  
+.trayectoria img{
+  border-radius: 10px;
+}
 
 /*------------- seccion de indices--------------- */
 #seccion1, .card , .card-boton, .grados-info, .grados-info h2, .sumas-basicas,.contenido, .contenido div {
@@ -648,6 +658,14 @@ menu h4 {
 
   .menu-toggle {
     display: block; /* Mostrar el botón de menú hamburguesa */
+  }
+
+  .creacionpag img{
+    width: 300px;
+  }
+    
+  .trayectoria img{
+    width: 300px;
   }
 
 }
