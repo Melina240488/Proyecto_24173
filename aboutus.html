@@ -10,15 +10,22 @@
 <body>
     <header class="container-cabecera">
         <div class="logo-container">
-            <a href="index.html"> <img src="imagenes/Biblioteca.jpg" alt="logo de Reservorio Educativo" class="logo"></a>
-            
+          <a href="index.html">
+            <img src="Imagenes/Biblioteca.jpg" alt="logo de Reservorio Educativo" class="logo">
+          </a>
         </div>
         <div class="container-title">
-          <h1 >Acerca de nosotros</h1>
+          <h1>Reservorio</h1>
         </div>
-        <div class="nav-links">
+        <nav>
+          <div class="nav-links">
             <a href="formulario.html" class="nav-link">Unite</a>
-        </div>
+          </div>
+          <button class="menu-toggle">
+            <i class="fa-solid fa-bars fa-lg"></i>
+          </button>
+          <button class="close-menu">&#10005;</button> <!-- Botón de cierre -->
+        </nav>
     </header>
     
     <main class="container">
@@ -36,5 +43,6 @@
         <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
         <div class="pie"><h6>Contacto: repositoriogeneral@repo.com.ar</h6></div>
     </footer>
+    <script src="app/menu.js"></script>
 </body>
 </html>
