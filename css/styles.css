@@ -570,6 +570,15 @@ menu h4 {
     width: 100%;
     max-width: 550px;
   }
+  .nav-links {
+    flex-direction: column; 
+    align-items: flex-start; 
+    justify-content: flex-start; 
+  }
+  .nav-link {
+    margin-bottom: 10px; 
+  }
+
 }
 
 /* Estilos para tabletas */
