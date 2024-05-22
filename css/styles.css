@@ -1,6 +1,7 @@
 .grados-info{
   display: none;
 }
+
 .creacionpag{
 display: grid;
 grid-template-columns: 1fr 1fr;
@@ -24,7 +25,7 @@ padding: 10px;}
 #seccion1, .grados-info h2, .contenido, .grados-info{
   width: 80%;
 }
-#seccion1{
+#seccion1, .contenido, .sumas-basicas{
   margin-bottom: 55px;
 }
 #seccion1 h2{
@@ -111,7 +112,6 @@ padding: 10px;}
   text-align: center;
   border: 1px solid #333;
 }
-
 .grados-info h2 {
   padding-top: 15px;
   padding-bottom: 23px;
@@ -131,7 +131,7 @@ padding: 10px;}
 
 
 .sumas-basicas {
-  width: 90%;
+  width: 95%;
   background-color: #f9f9f9;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -144,9 +144,12 @@ padding: 10px;}
   margin-top: 35px;
 }
 .contenido {
-  padding: 0px 40px 40px 40px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
 }
-
+.contenido > div {
+  width: 100%;
+}
 .sumas-basicas h3, h4, .card-boton{
   color: #333;
 }
@@ -171,16 +174,23 @@ h4 {
 }
 .contenedor-video iframe{
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16 / 9; 
 }
-p,
-h4+ul li {
-  color: #666;
-  font-size: 16px;
+.bloque{
+  display: block;
+}
+.centrar-texto{
+  text-align: center;
+}
+
+.caja{
+  border: 1px solid black;
+  padding: 10px 0px;
+  margin: 10px 0px;
 }
 .grados-info{
   margin-bottom: 35px;
-  padding: 20px;
+  padding: 20px 0px;
   border-radius: 10px;
 }
 
@@ -605,6 +615,9 @@ menu h4 {
 
 /* Estilos para dispositivos móviles */
 @media (max-width: 720px) {
+  .grados-info{
+    width: 100%;
+  }
   .container {
     padding: 10px;
   }
@@ -651,7 +664,6 @@ menu h4 {
   }
 
 }
-
 /* Estilos para tabletas */
 @media (min-width: 1280px) and (max-width: 800px) {
   .container {
@@ -669,40 +681,3 @@ menu h4 {
   }
   
 }
-@media only screen and (min-width: 320px) and (max-width: 955px){
-  .grados-info{
-    width: 100%;
-    margin: 0 auto;
-    padding: 25px 0px;
-    border-radius: 0;
-    margin-bottom: 30px;
-  }
-  .contenido div{
-    width: 100%;
-  }
-  
-}
-@media only screen and (min-width: 956px) and (max-width: 1455px){
-  .grados-info{
-    width: 100%;
-    margin: 0 auto;
-    padding: 25px 0px;
-    border-radius: 0;
-    margin-bottom: 30px;
-  }
-  .contenido div{
-    width: 100%;
-  }
-  .contenido-secundario, .contenido-principal{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-
-}
-/* @media only screen and (min-width: 1456px) and (max-width: 2000px) {
-  .contenido{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-} */
