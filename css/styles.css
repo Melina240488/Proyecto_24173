@@ -4,17 +4,19 @@
 .creacionpag{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  background-color: #81a2be;
+  gap: 10px;
   border-radius: 10px;
   padding: 10px;
+  background-color: rgb(255, 244, 244); 
+  box-shadow: 25px 25px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
 .trayectoria{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  background-color: #d0a8c6;
+  gap: 200px;
+  background-color: rgb(255, 244, 244);  
+  box-shadow: 25px 25px 5px 0px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   padding: 10px;
 }
@@ -364,8 +366,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #bfbbff; /* Fondo oscuro */
-  color: #000000; /* Texto claro para buen contraste */
+  background-color: #bfbbff;
+  color: #000000; 
   border: 1px solid #ccc;
   padding: 15px;
   border-radius: 10px;
@@ -376,7 +378,7 @@ body {
 .nivel-primario:hover,
 .nivel-secundario:hover {
   transform: scale(1.05);
-  color: #00000075; /* Color amarillo claro en hover para resaltar */
+  color: #00000075; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -658,6 +660,14 @@ menu h4 {
 
   .menu-toggle {
     display: block; /* Mostrar el botón de menú hamburguesa */
+  }
+
+  .creacionpag{
+    flex: auto;
+  }
+    
+  .trayectoria{
+    flex: auto;
   }
 
   .creacionpag img{
