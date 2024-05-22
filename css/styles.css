@@ -170,7 +170,7 @@ h4 {
   margin-bottom: 10px;
 }
 
-.contenido-secundario a {
+.contenido-secundario a , .contenido-principal a{
   color: #007bff;
   text-decoration: none;
   font-weight: bold;
