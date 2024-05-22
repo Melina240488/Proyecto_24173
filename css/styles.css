@@ -1,31 +1,32 @@
 .grados-info{
   display: none;
 }
-.creacionpag{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
+.creacionpag {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
   border-radius: 10px;
-  padding: 10px;
-  background-color: rgb(255, 244, 244); 
-  box-shadow: 25px 25px 5px 0px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  background-color: rgb(255, 244, 244);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.trayectoria{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 200px;
-  background-color: rgb(255, 244, 244);  
-  box-shadow: 25px 25px 5px 0px rgba(0, 0, 0, 0.2);
+.trayectoria {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  background-color: rgb(255, 244, 244);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  padding: 10px;
+  padding: 20px;
 }
 
-.creacionpag img{
-  border-radius: 10px;
-}
-  
-.trayectoria img{
+.creacionpag img,
+.trayectoria img {
+  max-width: 300px;
+  max-height: 200px;
   border-radius: 10px;
 }
 
@@ -662,20 +663,18 @@ menu h4 {
     display: block; /* Mostrar el botón de menú hamburguesa */
   }
 
-  .creacionpag{
-    flex: auto;
-  }
-    
-  .trayectoria{
-    flex: auto;
+  .creacionpag,
+  .trayectoria {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
   }
 
-  .creacionpag img{
-    width: 300px;
-  }
-    
-  .trayectoria img{
-    width: 300px;
+  .creacionpag img,
+  .trayectoria img {
+    order: -1; 
+    margin-bottom: 10px;
   }
 
 }
